@@ -29,7 +29,7 @@ const initialStateAccount = {
         return state;
     }
   };
-
+//Actions
   export const deposit = (amount) => {
     return { type: "account/deposit", payload: amount };
   };

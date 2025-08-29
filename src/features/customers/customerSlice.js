@@ -16,9 +16,9 @@ const customerReducer = (state = initialStateCustomer, action) => {
 }}
 
 export const createCustomer = (fullName, nationalID) => {
-    return { type: 'createCustomer', payload: { fullName, nationalID, createdAt: new Date().toISOString() }}
+    return { type: 'customer/createCustomer', payload: { fullName, nationalID, createdAt: new Date().toISOString() }}
 }
 export const updateName = (fullName) => {
-return { type: 'account/updateName', payload: fullName}
+return { type: 'customer/updateName', payload: fullName}
 }
 export default customerReducer
